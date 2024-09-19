@@ -1,6 +1,6 @@
 public class Cool extends Event {
     @Override
-    public void coolEvent () {
+    public void coolEvent() {
         super.coolEvent();
         int randomCool = (int)(Math.random()*10);
         if (randomCool <= 2) {
@@ -17,24 +17,24 @@ public class Cool extends Event {
         }
     }
 
-    public void nothing () {
+    public void nothing() {
         System.out.println(blue + "😅 아무 일도 없었습니다.");
         System.out.println(exit);
     }
 
-    public void hide () {
+    public void hide() {
         System.out.println(blue + " 🐻 곰을 만났지만 다행히 피할 수 있었습니다.");
         System.out.println(exit);
     }
 
-    public void item () {
+    public void item() {
         Cool ci = new CoolItem();
         System.out.println(blue + " 🎁 아이템을 발견했습니다.");
         ci.item();
         System.out.println(exit);
     }
 
-    public void village () {
+    public void village() {
         System.out.println(blue + " 🏘 마을을 발견해 하루를 안전하게 푹 쉴 수 있었습니다.");
         System.out.println(exit);
     }
