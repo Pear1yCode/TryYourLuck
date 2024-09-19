@@ -1,10 +1,10 @@
 public class Adventurer {
     Event ev = new Event();
-        public void go () {
+        public void go() {
             ev.go();
         }
 
-        public void game () {
+        public void game() {
             ev.game();
         }
 }
