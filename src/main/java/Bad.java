@@ -1,7 +1,7 @@
 public class Bad extends Event {
 
     @Override
-    public void badEvent () {
+    public void badEvent() {
         super.badEvent();
         int randomBad = (int)(Math.random()*100)+1;
         if (randomBad <= 30) {
@@ -18,12 +18,12 @@ public class Bad extends Event {
         }
     }
 
-    public void hurt () {
+    public void hurt() {
         System.out.println(red + " 😣 길을 가다가 넘어져 다쳤습니다.");
         System.out.println(exit);
     }
 
-    public void bear () {
+    public void bear() {
         Bear bear = new Bear();
         int randomBearAttack = (int)(Math.random()*10);
         if (randomBearAttack <= 1) {
@@ -41,14 +41,14 @@ public class Bad extends Event {
         }
     }
 
-    public void item () {
+    public void item() {
         Bad bi = new BadItem();
         System.out.println(" 🎁 아이템을 발견했습니다.");
         bi.item();
         System.out.println(exit);
     }
 
-    public void fall () {
+    public void fall() {
         System.out.println(red + " 💥 모험가가 발을 헛딛여 낭떠러지에서 떨어졌습니다.");
         over();
         System.out.println(exit);
