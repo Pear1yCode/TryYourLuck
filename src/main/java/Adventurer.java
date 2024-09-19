@@ -3,7 +3,6 @@ public class Adventurer {
         public void go() {
             ev.go();
         }
-
         public void game() {
             ev.game();
         }
