@@ -49,7 +49,7 @@ public class Event {
         }
     }
 
-    public void go () {
+    public void go() {
         int RandomNumber = (int)(Math.random()*9001)+1000;
         System.out.print(" 🏃🏻‍♀️ 앞으로 가기 위해서는 같은 값의 입력이 필요합니다. " + RandomNumber + " : ");
         if(RandomNumber == sc.nextInt()) {
@@ -61,7 +61,7 @@ public class Event {
         }
     }
 
-    public void menu () {
+    public void menu() {
         while (true) {
             System.out.println("==========        TYL        ==========");
             System.out.println(green + "1. 모험하기 (운을 시험하기)");
@@ -187,17 +187,17 @@ public class Event {
         System.out.println(exit);
     }
 
-    public void upTime () {
+    public void upTime() {
         time += 1;
     }
 
-    public void upHeart () {
-
+    public void upHeart() {
+        dead += 1;
     }
 
     public void turn() {
         time -= 1; // time 값을 누적시킬 경우에는 다른 곳에서도 time을 넣어야 할 것 같아 private를 유지(캡슐화?)하기 위해, -로 넣고 0이 되면 게임이 종료되는 조건을 넣기로 했다.
-        if (time == 0) {
+        if (time == 0 && dead != 0) {
             clear();
         } else if (dead == 0) {
             over();
@@ -215,16 +215,9 @@ public class Event {
     }
 
     public void over() {
-        if (dead == 0) {
             System.out.println(yellow + "오늘은 운이 없네요.");
             System.out.println(exit);
             System.exit(0);
-        }
-    }
-
-    public void end(int time) {
-        System.out.println("게임을 종료합니다.");
-        System.exit(0);
     }
 
     public void info() {
