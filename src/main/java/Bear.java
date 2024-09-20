@@ -1,5 +1,4 @@
 public class Bear extends Bad {
-    Event ev = new Bear();
     public void attack() {
         System.out.println(red + " 🐻 곰이 당신을 밀치고 도망갔습니다.");
         System.out.println(exit);
