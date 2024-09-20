@@ -49,11 +49,25 @@ public class Event {
         }
     }
 
+    public void run() {
+        int runner = (int)(Math.random()*901)+300;
+        for(int i=0; i <= 10; i++) {
+            try {
+                Thread.sleep(runner);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            System.out.print("🏃🏻‍♀️🏃🏻‍♂️");
+        }
+        System.out.println();
+    }
+    
     public void go() {
         int RandomNumber = (int)(Math.random()*9001)+1000;
         System.out.print(" 🏃🏻‍♀️ 앞으로 가기 위해서는 같은 값의 입력이 필요합니다. " + RandomNumber + " : ");
         if(RandomNumber == sc.nextInt()) {
             System.out.println(" ⭕ 올바른 입력입니다. 앞으로 이동합니다.");
+            run();
             event();
         } else {
             System.out.println(" ❌ 올바르지 않은 입력입니다. 다시 입력하세요.");
