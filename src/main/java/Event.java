@@ -24,7 +24,11 @@ public class Event {
     public static final String exit = "\u001B[0m"; // 종료 코드가 없으면 색이 계속 적용되므로 문제생기면 사용
 
     public void game() {
-        System.out.println(yellow + "Try" + aqua + "Your" + green + "Luck");
+        System.out.println(yellow + "■■■■■■■■■■■  ■■■■■■■■■    ■■      ■■ " + aqua + "     ■■      ■■    ■■■■    ■■       ■■  ■■■■■■■■■   " + green + "     ■■■          ■■       ■■      ■■■■■■■   ■■■     ■■ ");
+        System.out.println(yellow + "■■■■■■■■■■■  ■■       ■■   ■■    ■■  " + aqua + "      ■■    ■■   ■■    ■■  ■■       ■■  ■■       ■■ " + green + "     ■■■          ■■       ■■    ■■          ■■■  ■■    ");
+        System.out.println(yellow + "    ■■■      ■■■■■■■■■       ■■■■    " + aqua + "        ■■■■     ■■    ■■  ■■       ■■  ■■■■■■■■■   " + green + "     ■■■          ■■       ■■   ■■           ■■■■■      ");
+        System.out.println(yellow + "    ■■■      ■■■      ■■      ■■     " + aqua + "         ■■      ■■    ■■   ■■     ■■   ■■■      ■■ " + green + "     ■■■■■■■■■■    ■■     ■■     ■■          ■■■  ■■    ");
+        System.out.println(yellow + "    ■■■      ■■■      ■■      ■■     " + aqua + "         ■■        ■■■■       ■■■■■     ■■■      ■■ " + green + "     ■■■■■■■■■■      ■■■■■         ■■■■■■■   ■■■     ■■ ");
         System.out.println(exit);
         System.out.println(purple + "당신의 운을 시험해보세요.");
         System.out.println(exit);
@@ -176,7 +180,7 @@ public class Event {
                     bi.rottenApple();
                     heartBreak();
                 } else if (bad == 2) {
-                    bi.blackApple();
+                    bi.fruit();
                     heartBreak();
                     heartBreak();
                 } else if (bad == 3) {
