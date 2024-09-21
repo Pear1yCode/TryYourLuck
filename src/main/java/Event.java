@@ -180,7 +180,7 @@ public class Event {
                     bi.rottenApple();
                     heartBreak();
                 } else if (bad == 2) {
-                    bi.fruit();
+                    bi.unknownFruit();
                     heartBreak();
                     heartBreak();
                 } else if (bad == 3) {
