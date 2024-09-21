@@ -5,7 +5,7 @@ public class BadItem extends Bad {
         if (randomItem <= 50) {
             rottenApple();
         } else if (randomItem <= 55) {
-            blackApple();
+            unknownFruit();
         } else {
             rottenWater();
         }
@@ -19,10 +19,10 @@ public class BadItem extends Bad {
         System.out.println(exit);
     }
 
-    public void blackApple() {
+    public void unknownFruit() {
         bad = 2;
-        System.out.println(black + "🖤🖤🖤🖤🖤 치명적인 사과를 먹었습니다. 🖤🖤🖤🖤🖤");
-        System.out.println("끔찍한 사과였습니다.");
+        System.out.println(black + "🍇🍇🍇🍇🍇 처음보는 과일을 먹고 독에 걸렸습니다. 🍇🍇🍇🍇🍇");
+        System.out.println("끔찍한 과일이었습니다.");
         System.out.println(exit);
     }
 
