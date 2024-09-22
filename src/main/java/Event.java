@@ -155,6 +155,7 @@ public class Event {
         }
     }
 
+    // 색깔이 끝나게 만드는 메소드인데 그냥 System.out.println(exit);만 입력해도 되는데 이게 더 효율적이 맞을까? 조금 더 생각해볼 필요가 있다.
     public void colorExit () {
         System.out.println(exit);
     }
