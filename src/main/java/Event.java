@@ -29,19 +29,19 @@ public class Event {
         System.out.println(yellow + "    ■■■      ■■■■■■■■■       ■■■■    " + aqua + "        ■■■■     ■■    ■■  ■■       ■■  ■■■■■■■■■   " + green + "     ■■■          ■■       ■■   ■■           ■■■■■      ");
         System.out.println(yellow + "    ■■■      ■■■      ■■      ■■     " + aqua + "         ■■      ■■    ■■   ■■     ■■   ■■■      ■■ " + green + "     ■■■■■■■■■■    ■■     ■■     ■■          ■■■  ■■    ");
         System.out.println(yellow + "    ■■■      ■■■      ■■      ■■     " + aqua + "         ■■        ■■■■       ■■■■■     ■■■      ■■ " + green + "     ■■■■■■■■■■      ■■■■■         ■■■■■■■   ■■■     ■■ ");
-        System.out.println(exit);
+        colorExit();
         System.out.println(purple + "당신의 운을 시험해보세요.");
-        System.out.println(exit);
+        colorExit();
         System.out.println();
         System.out.println(blue + "1. 게임 시작");
         System.out.println(red + "2. 게임 종료");
-        System.out.println(exit);
+        colorExit();
         String game = sc.nextLine();
         String game1 = game.replace(" ", "");
         if (game1.equals("1") || game1.equals("1.") || game1.equals("게임 시작") || game1.equals("1 게임 시작") || game1.equals("1. 게임 시작")
                 || game1.contains("게임시작") || game1.contains("시작")) {
             System.out.println(green + "게임을 시작합니다.");
-            System.out.println(exit);
+            colorExit();
             start();
             Adventurer ad = new Adventurer();
             menu();
@@ -155,6 +155,10 @@ public class Event {
         }
     }
 
+    public void colorExit () {
+        System.out.println(exit);
+    }
+    
     public void event() {
         int randomEvent = (int)(Math.random()*101) + 1 ; // 1 ~ 100 까지 난수 생성
             if (randomEvent >= 35) { // 35% 좋은 이벤트, 65% 나쁜 이벤트
@@ -197,12 +201,12 @@ public class Event {
 
     public void coolEvent() {
         System.out.println(blue + "😊😊😊😊😊 좋은 이벤트 발생 😊😊😊😊😊");
-        System.out.println(exit);
+        colorExit();
     }
 
     public void badEvent() {
         System.out.println(red + " 😡😡😡😡😡 나쁜 이벤트 발생 😡😡😡😡😡 ");
-        System.out.println(exit);
+        colorExit();
     }
 
     public void upTime() {
@@ -228,24 +232,24 @@ public class Event {
 
     public void clear() {
             System.out.println(green + "오늘의 운은 좋은데요 ?");
-            System.out.println(exit);
+            colorExit();
             System.exit(0);
     }
 
     public void over() {
             System.out.println(yellow + "오늘은 운이 없네요.");
-            System.out.println(exit);
+            colorExit();
             System.exit(0);
     }
 
     public void info() {
-//        System.out.println("시간 : " + black + time + exit + " / " + allTime + "\n목숨 : " + red + dead + exit + " / " + heart);
+//        System.out.println("모험 횟수 : " + black + time + exit + " / " + allTime + "\n목숨 : " + red + dead + exit + " / " + heart);
         if (dead == 3) {
-            System.out.println("시간 : " + black + time + exit + " / " + allTime + "\n목숨 : " + green + dead + exit + " / " + heart);
+            System.out.println("모험 횟수 : " + black + time + exit + " / " + allTime + "\n목숨 : " + green + dead + exit + " / " + heart);
         } else if (dead == 2) {
-            System.out.println("시간 : " + black + time + exit + " / " + allTime + "\n목숨 : " + yellow + dead + exit + " / " + heart);
+            System.out.println("모험 횟수 : " + black + time + exit + " / " + allTime + "\n목숨 : " + yellow + dead + exit + " / " + heart);
         } else if (dead == 1) {
-            System.out.println("시간 : " + black + time + exit + " / " + allTime + "\n목숨 : " + red + dead + exit + " / " + heart);
+            System.out.println("모험 횟수 : " + black + time + exit + " / " + allTime + "\n목숨 : " + red + dead + exit + " / " + heart);
         }
 
     }
