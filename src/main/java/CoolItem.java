@@ -15,20 +15,20 @@ public class CoolItem extends Cool {
     public void goldApple() {
         cool = 1;
         System.out.println(yellow + " 🟨🟨🟨🟨🟨 황금 사과를 발견했습니다. 🟨🟨🟨🟨🟨");
-        System.out.println("황금 사과의 효과로 조금 더 빠른 여행을 할 수 있었습니다.");
+        System.out.println("황금 사과의 효과로 조금 더 빠른 여행을 할 수 있었습니다. (모험횟수 -2)");
         System.out.println(exit);
     }
 
     public void medicinalHerb() {
         cool = 2;
         System.out.println(green + "🌾🌿🍀🌱☘ 약초를 발견했습니다. 🌳🍃🍁🍂🌷");
-        System.out.println("체력을 1 회복했습니다.");
+        System.out.println("체력을 1 회복했습니다. (목숨 +1)");
     }
 
     public void fruit() {
         cool = 3;
         System.out.println(blue + " 🍉🍊🍒🍓🍎 과일을 발견했습니다. 🥝🍇🍑🍊🍋");
-        System.out.println("맛있는 과일로 배를 채웠습니다.");
+        System.out.println("맛있는 과일로 배를 채웠지만 별다른 효과는 없었네요 😂");
         System.out.println(exit);
     }
 }
