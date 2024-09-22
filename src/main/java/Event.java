@@ -89,7 +89,7 @@ public class Event {
             System.out.println(green + "1. 모험하기 (운을 시험하기)");
             System.out.println(aqua + "2. 정보 열람 ");
             System.out.println(red + "3. 프로그램 종료");
-            System.out.println(exit);
+            colorExit();
             String answer = sc.next();
             String answer1 = answer.replace(" ", "");
 
