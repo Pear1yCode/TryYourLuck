@@ -54,7 +54,7 @@ public class Event {
     }
 
     public void gameInfo () {
-        System.out.println(특별한 내용이 없다면 좋은 이벤트는 패널티 없이 모험횟수가 줄어들고, 나쁜 이벤트는 목숨이 1 줄어듭니다.);
+        System.out.println("특별한 내용이 없다면 좋은 이벤트는 패널티 없이 모험횟수가 줄어들고, 나쁜 이벤트는 목숨이 1 줄어듭니다.");
     }
     
     public void run() {
