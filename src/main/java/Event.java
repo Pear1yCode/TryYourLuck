@@ -68,17 +68,17 @@ public class Event {
             if (runner <= 200) {
                 System.out.print("🏃🏻‍♀️🏃🏻‍♂️");
             } else if (runner <= 400) {
-                System.out.println("🐎🦅");
+                System.out.print("🐎🦅");
             } else if (runner <= 600) {
-                System.out.println("🐇🦘");
+                System.out.print("🐇🦘");
             } else if (runner <= 800) {
-                System.out.println("🐤🐤");
+                System.out.print("🐤🐤");
             } else if (runner <= 900) {
-                System.out.println("🐢🐢");
+                System.out.print("🐢🐢");
             } else if (runner <= 950) {
-                System.out.println("🐛🐛");
+                System.out.print("🐛🐛");
             } else {
-                System.out.println("🐌🐌");
+                System.out.print("🐌🐌");
             }
         }
         System.out.println();
