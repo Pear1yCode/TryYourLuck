@@ -20,7 +20,7 @@ public class Event {
     public static final String yellow = "\u001B[33m"; // 노란색
     public static final String purple = "\u001B[35m"; // 보라색
     public static final String aqua = "\u001B[36m"; // 아쿠아
-    public static final String white = "\u001B[37m"; // 하얀색
+    public static final String white = "\u001B[37m"; // 하얀색 // 딱히 사용할 일은 없다. console 배경을 검은색으로 만들 수 있다면 좋은 선택지가 될 것으로 보임
     public static final String exit = "\u001B[0m"; // 종료 코드가 없으면 색이 계속 적용되므로 문제생기면 사용
 
     public void game() {
@@ -58,7 +58,7 @@ public class Event {
     }
     
     public void run() {
-        int runner = (int)(Math.random()*901)+300;
+        int runner = (int)(Math.random()*901)+500;
         for(int i=0; i <= 10; i++) {
             try {
                 Thread.sleep(runner);
