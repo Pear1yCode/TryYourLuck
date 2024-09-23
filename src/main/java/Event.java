@@ -58,14 +58,28 @@ public class Event {
     }
     
     public void run() {
-        int runner = (int)(Math.random()*501)+1;
+        int runner = (int)(Math.random()*1001)+1;
         for(int i=0; i <= 10; i++) {
             try {
                 Thread.sleep(runner);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            System.out.print("🏃🏻‍♀️🏃🏻‍♂️");
+            if (runner <= 200) {
+                System.out.print("🏃🏻‍♀️🏃🏻‍♂️");
+            } else if (runner <= 400) {
+                System.out.println("🐎🦅");
+            } else if (runner <= 600) {
+                System.out.println("🐇🦘");
+            } else if (runner <= 800) {
+                System.out.println("🐤🐤");
+            } else if (runner <= 900) {
+                System.out.println("🐢🐢");
+            } else if (runner <= 950) {
+                System.out.println("🐛🐛");
+            } else {
+                System.out.println("🐌🐌");
+            }
         }
         System.out.println();
     }
