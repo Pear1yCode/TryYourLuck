@@ -58,7 +58,7 @@ public class Event {
     }
     
     public void run() {
-        int runner = (int)(Math.random()*901)+500;
+        int runner = (int)(Math.random()*501)+1;
         for(int i=0; i <= 10; i++) {
             try {
                 Thread.sleep(runner);
