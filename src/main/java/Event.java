@@ -64,6 +64,20 @@ public class Event {
             System.out.println("올바른 명령어를 입력해주세요 😚");
         }
     }
+/* 이게 더 자유롭게 색을 넣을 수 있을 것 같은데 잘 모르겠다.
+매개변수를 뭘 넣어야하지?
+            public void backgroundColor () {
+            JPanel panel = new JPanel();
+            panel.setBackground(Color.GREEN);
+
+            JFrame frame = new JFrame("배경색");
+            frame.setSize(100,100);
+            frame.add(panel);
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        }
+    */ 
 
     public void gameInfo () {
         System.out.println("특별한 내용이 없다면 좋은 이벤트는 패널티 없이 모험횟수가 줄어들고, 나쁜 이벤트는 목숨이 1 줄어듭니다.");
