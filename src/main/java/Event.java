@@ -13,6 +13,7 @@ public class Event {
     protected int bad;
 
     Scanner sc = new Scanner(System.in);
+    // 글자에 색 넣기용
     public static final String black = "\u001B[30m"; // 검은색
     public static final String green = "\u001B[32m"; // 초록색
     public static final String blue = "\u001B[34m"; // 파란색  넣기 위해 넣음 // static으로 어디서든 사용할 수 있고 final로 변하지 않음
@@ -23,8 +24,19 @@ public class Event {
     public static final String white = "\u001B[37m"; // 하얀색 // 딱히 사용할 일은 없다. console 배경을 검은색으로 만들 수 있다면 좋은 선택지가 될 것으로 보임
     public static final String exit = "\u001B[0m"; // 종료 코드가 없으면 색이 계속 적용되므로 문제생기면 사용
 
+    // 콘솔 배경에 색 넣기용
+    public static final String BACK_BLACK = "\u001B[40m";
+    public static final String BACK_RED = "\u001B[41m";
+    public static final String BACK_GREEN = "\u001B[42m";
+    public static final String BACK_YELLOW = "\u001B[43m";
+    public static final String BACK_BLUE = "\u001B[44m";
+    public static final String BACK_PURPLE = "\u001B[45m";
+    public static final String BACK_CYAN = "\u001B[46m";
+    public static final String BACK_WHITE = "\u001B[47m";
+
+
     public void game() {
-        System.out.println(yellow + "■■■■■■■■■■■  ■■■■■■■■■    ■■      ■■ " + aqua + "     ■■      ■■    ■■■■    ■■       ■■  ■■■■■■■■■   " + green + "     ■■■          ■■       ■■      ■■■■■■■   ■■■     ■■ ");
+        System.out.println(BACK_BLACK + yellow + "■■■■■■■■■■■  ■■■■■■■■■    ■■      ■■ " + aqua + "     ■■      ■■    ■■■■    ■■       ■■  ■■■■■■■■■   " + green + "     ■■■          ■■       ■■      ■■■■■■■   ■■■     ■■ ");
         System.out.println(yellow + "■■■■■■■■■■■  ■■       ■■   ■■    ■■  " + aqua + "      ■■    ■■   ■■    ■■  ■■       ■■  ■■       ■■ " + green + "     ■■■          ■■       ■■    ■■          ■■■  ■■    ");
         System.out.println(yellow + "    ■■■      ■■■■■■■■■       ■■■■    " + aqua + "        ■■■■     ■■    ■■  ■■       ■■  ■■■■■■■■■   " + green + "     ■■■          ■■       ■■   ■■           ■■■■■      ");
         System.out.println(yellow + "    ■■■      ■■■      ■■      ■■     " + aqua + "         ■■      ■■    ■■   ■■     ■■   ■■■      ■■ " + green + "     ■■■■■■■■■■    ■■     ■■     ■■          ■■■  ■■    ");
