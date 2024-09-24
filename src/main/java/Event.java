@@ -13,6 +13,11 @@ public class Event {
     protected int bad;
 
     Scanner sc = new Scanner(System.in);
+
+/*글자와 배경색 넣기에 대한 부분은 파이썬과 어느정도 비슷하다.
+
+파이썬은 class Colors에 끝에 black = 색상코드 식으로 만드는 것으로 보인다.*/
+    
     // 글자에 색 넣기용
     public static final String black = "\u001B[30m"; // 검은색
     public static final String green = "\u001B[32m"; // 초록색
