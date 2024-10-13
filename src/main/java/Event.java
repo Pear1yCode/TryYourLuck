@@ -157,6 +157,11 @@ public class Event {
 
     public void end() {
         System.out.println("게임을 종료합니다.");
+        System.out.println(BACK_BLACK + aqua + "■■■■■■■■■■■  ■■■■■■■■■    ■■      ■■ " + aqua + "     ■■      ■■    ■■■■    ■■       ■■  ■■■■■■■■■   " + green + "     ■■■          ■■       ■■      ■■■■■■■   ■■■     ■■ ");
+        System.out.println(yellow + "■■■■■■■■■■■  ■■       ■■   ■■    ■■  " + aqua + "      ■■    ■■   ■■    ■■  ■■       ■■  ■■       ■■ " + green + "     ■■■          ■■       ■■    ■■          ■■■  ■■    ");
+        System.out.println(yellow + "    ■■■      ■■■■■■■■■       ■■■■    " + aqua + "        ■■■■     ■■    ■■  ■■       ■■  ■■■■■■■■■   " + green + "     ■■■          ■■       ■■   ■■           ■■■■■      ");
+        System.out.println(yellow + "    ■■■      ■■■      ■■      ■■     " + aqua + "         ■■      ■■    ■■   ■■     ■■   ■■■      ■■ " + green + "     ■■■■■■■■■■    ■■     ■■     ■■          ■■■  ■■    ");
+        System.out.println(yellow + "    ■■■      ■■■      ■■      ■■     " + aqua + "         ■■        ■■■■       ■■■■■     ■■■      ■■ " + green + "     ■■■■■■■■■■      ■■■■■         ■■■■■■■   ■■■     ■■ ");
         System.exit(0);
     }
 
