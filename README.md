@@ -1,3 +1,5 @@
+Console game
+
 # Try Your Luck (MiniGame)
 just go(for time) && dead stack.
 
